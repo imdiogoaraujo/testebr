@@ -1,0 +1,30 @@
+// build.gradle — Configuração do plugin Doramogo para CloudStream 3
+// Coloque este arquivo na pasta: DoramogoProvider/build.gradle
+
+version = 1  // Incrementa a cada atualização do plugin
+
+cloudstream {
+    // Nome exibido na lista de extensões do app
+    description = "Doramas em português do site Doramogo"
+    authors = listOf("SeuNomeAqui")
+
+    /**
+     * Status do plugin:
+     * 0 = Funcionando
+     * 1 = Lento (pode travar)
+     * 2 = Beta (instável)
+     * 3 = Quebrado
+     */
+    status = 0
+
+    tvTypes = listOf("TvSeries")
+
+    // URL do ícone do plugin (pode usar o favicon do site)
+    iconUrl = "https://www.doramogo.net/favicon.ico"
+
+    language = "pt"
+    requiresResources = false
+
+    // Opcional: URL do repositório do plugin
+    // repositoryUrl = "https://github.com/SEUSUSARIO/cloudstream-extensions"
+}
